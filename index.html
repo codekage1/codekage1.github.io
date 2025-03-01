@@ -1,0 +1,143 @@
+<!-- 
+Design, develop a responsive web site using recommended design
+practices. Your web site will contain a home page and three content pages. Create an
+external style sheet (.css file) that configures text, colour and layout. No font tags,
+embedded CSS or inline CSS is allowed.
+Your website must be on one of the following topics:
+● Sport
+● Music
+● Comedy
+Required features of the pages include:
+● Appropriate meta tags
+● One page utilising tables eectively to display tabular information
+● One e-mail hyperlink
+● One external hyperlink
+● Consistent banner logo area
+● Consistent main navigation
+● Association with external style sheet (.css file)
+● One Bonus Feature: YouTube video, CSS image gallery, or CSS Transition
+● Popular browsers (including Chrome, Edge, and Firefox) must render each page
+correctly
+The goal of the assignment is to demonstrate how you are thinking about putting
+course concepts, models, tools and practices in your own context to demonstrate the
+module learning outcomes:
+● Apply key concepts and principles of creating a hosted website with HTML and
+CSS
+● Design a modern page layout with HTML and CSS
+● Create tables with HTML and CSS
+● Create responsive pages that display well in multiple form factors -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="World of Sports - Your ultimate guide to sports news and information"
+    />
+    <meta
+      name="keywords"
+      content="sports, athletics, news, tournaments, teams"
+    />
+    <meta name="author" content="Sports Enthusiast" />
+    <title>World of Sports - Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="https://placehold.co/200x80?text=World+of+Sports" alt="World of Sports Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="tournaments.html">Tournaments</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Welcome to World of Sports</h1>
+        <p>
+          Your destination for the latest in sports news, tournaments, and
+          athletic excellence.
+        </p>
+      </section>
+
+      <section class="featured">
+        <h2>Featured Stories</h2>
+        <div class="card-container">
+          <div class="card">
+            <!-- https://picsum.photos/id/1077/400/300 -->
+            <img src="images/football.jpg" alt="Football match" />
+            <h3>Latest Football Updates</h3>
+            <p>Stay updated with the latest football matches and scores.</p>
+          </div>
+          <div class="card">
+            <!-- https://picsum.photos/id/166/400/300 -->
+            <img src="images/basketball.jpg" alt="Basketball game" />
+            <h3>Basketball Highlights</h3>
+            <p>Check out the most exciting basketball moments.</p>
+          </div>
+          <div class="card">
+            <!-- https://picsum.photos/id/452/400/300 -->
+            <img src="images/tennis.jpg" alt="Tennis match" />
+            <h3>Tennis Tournament News</h3>
+            <p>Follow the latest tennis tournament updates.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="video-section">
+        <h2>Featured Video</h2>
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Z0vsD8J-0_4"
+            title="Featured Sports Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p>
+            Email:
+            <a href="mailto:bonaven_mokwe@outlook.com"
+              >bonaven_mokwe@outlook.com</a
+            >
+          </p>
+          <p>
+            Follow us on
+            <a href="https://twitter.com/worldofsports" target="_blank"
+              >Twitter</a
+            >
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 World of Sports. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
