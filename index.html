@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top Sport Showcase</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Top Football Player Showcase</h1>
+    <nav>
+      <a href="#gallery">Gallery</a>
+      <a href="#vote">Vote</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="images/football.jpg" alt="Football" />
+      <img src="images/basketball.jpg" alt="Basketball" />
+      <img src="images/mlf.jpg" alt="Baseball" />
+    </div>
+  </section>
+
+  <section id="vote">
+    <h2>Vote for Your Favorite Sport</h2>
+    <form id="voteForm">
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+
+      <label for="sport">Choose Sport:</label>
+      <select id="sport" required>
+        <option value="">--Select--</option>
+        <option value="Football">Football</option>
+        <option value="Basketball">Basketball</option>
+        <option value="Baseball">Baseball</option>
+      </select>
+
+      <button type="submit">Submit Vote</button>
+    </form>
+    <p id="voteResult"></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact the Creator</h2>
+    <button id="revealBtn">Reveal Contact Info</button>
+    <p id="contactInfo" style="display: none;">Email: artist@example.com</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Precast Showcase</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
